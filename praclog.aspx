@@ -8,8 +8,8 @@
 <body>
     <div>
         <form id="form1" runat="server" action="prac.aspx" method="get">
-        Login:<input type="text" name="log" /><br />
-        Hasło:<input type="password" name="pass" /><br />
+        Login: <input type="text" name="log" /><br />
+        Hasło: <input type="password" name="pass" /><br />
         <input type="submit" value="Loguj"/>
     </form>
     </div>

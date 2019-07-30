@@ -66,13 +66,13 @@ public partial class prac : System.Web.UI.Page
             "<div>" +
             "W poniższym formularzu wprowadź pesel ucznia, numer przedmiotu z listy poniżej formularza oraz wynik jaki uczeń otrzymał z egzaminu." +
             "<form id='form1' runat='server' action='prac.aspx' method='get'>" +
-            "Pesel:<input type='text' name='pesel'/><br />" +
-            " Nr przedmiotu:<input type='number' name='nr' /><br />" +
-            " Wynik <input type='number' name='score' /><br />" +
+            "Pesel: <input type='text' name='pesel'/><br />" +
+            " Nr przedmiotu: <input type='number' name='nr' /><br />" +
+            " Wynik: <input type='number' name='score' /><br />" +
             "<input type='submit' value='Dodaj wynik'/>" +
             "</form>" +
             "</div><br/>" +
-            "<span id='list'>" +
+            "<div id='list'>" +
             "Lista numerow ocen:<br/>" +
             "");
         string strcom = "SELECT idprzedmiot,nazwa FROM przedmiot";
@@ -84,7 +84,7 @@ public partial class prac : System.Web.UI.Page
         {
             Response.Write(read["idprzedmiot"] + " " + read["nazwa"] + "<br/>");
         }
-        Response.Write("</span>");
+        Response.Write("</div>");
         connect.Close();
         read.Close();
     }
