@@ -6,10 +6,6 @@
     <link href="Style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <%--<form id="form1" runat="server">
-        <div>
-        </div>
-    </form>--%>
     <div>
         <a href="praclog.aspx">Logowanie pracownika</a><br />
         <a href="studlog.aspx">Logowanie studenta</a>
