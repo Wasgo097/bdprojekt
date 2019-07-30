@@ -67,10 +67,15 @@ a:hover{
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    padding:3px;
 }
 #list {
     color: black;
     font-size: 10px;
+    background-color: white;
+}
+#mark {
+    font-size:20px;
     background-color: white;
 }
 .logout {

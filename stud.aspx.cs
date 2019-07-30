@@ -33,10 +33,12 @@ public partial class stud : System.Web.UI.Page
                     com.CommandText = "Select p.nazwa,o.wynik from oceny o join uczniowie u on u.pesel=o.iducznia JOIN przedmiot p on p.idprzedmiot=o.idprzedmiotu WHERE u.pesel = '" + Request.QueryString["log"] + "'";
                     read.Close();
                     read = com.ExecuteReader();
+                    Response.Write("<table id='mark'><tr><th>Przedmiot</th><th>Wynik</th></tr>");
                     while (read.Read())
                     {
-                        Response.Write("Wynik z " + read["nazwa"] + " = " + read["wynik"] + "<br/>");
+                        Response.Write("<tr><th> " + read["nazwa"] + " </th><th> " + read["wynik"] + "</th></tr>");
                     }
+                    Response.Write("</table>");
                 }
             }
             else Response.Write("Nie udalo sie zalogowac");
