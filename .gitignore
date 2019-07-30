@@ -1,0 +1,5 @@
+BIN/
+App_Data/
+Web.Debug.config
+Web.config
+packages.config
