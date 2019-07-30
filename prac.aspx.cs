@@ -72,8 +72,7 @@ public partial class prac : System.Web.UI.Page
             "<input type='submit' value='Dodaj wynik'/>" +
             "</form>" +
             "</div><br/>" +
-            "<div id='list'>" +
-            "Lista numerow ocen:<br/>" +
+            "<table id='list'><tr><th colspan='2'>Lista numerow ocen</th></tr>" +
             "");
         string strcom = "SELECT idprzedmiot,nazwa FROM przedmiot";
         MySqlConnection connect = new MySqlConnection(str);
@@ -82,9 +81,9 @@ public partial class prac : System.Web.UI.Page
         MySqlDataReader read = com.ExecuteReader();
         while (read.Read())
         {
-            Response.Write(read["idprzedmiot"] + " " + read["nazwa"] + "<br/>");
+            Response.Write("<tr><th>"+read["idprzedmiot"] + "</th><th> " + read["nazwa"] + "</th></tr>");
         }
-        Response.Write("</div>");
+        Response.Write("</table>");
         connect.Close();
         read.Close();
     }

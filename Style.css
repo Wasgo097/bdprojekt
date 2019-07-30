@@ -64,10 +64,14 @@ a:visited{
 a:hover{
     color:lightsalmon;
 }
-#list{
-    color:black;
-    font-size:10px;
-    background-color:white;
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#list {
+    color: black;
+    font-size: 10px;
+    background-color: white;
 }
 .logout {
     background-color:bisque;
