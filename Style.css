@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: burlywood;
+    background-color: rgba(222, 184, 135, 0.52);
     font-size: 20px;
 }
 input {
@@ -55,10 +55,11 @@ table, th, td {
     background-color: white;
 }
 .logout {
-    background-color:bisque;
+    background-color: bisque;
     border-radius: 4px;
     border-style: solid;
     border-width: 2px;
+    border-color: black;
     color: gray;
-    padding:5px;
+    padding: 5px;
 }
