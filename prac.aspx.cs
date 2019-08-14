@@ -64,7 +64,7 @@ public partial class prac : System.Web.UI.Page
         Response.Write("<br/><a href='praclog.aspx' class='logout'>Wyloguj</a><br/><br/>");
         Response.Write(
             "<div>" +
-            "W poniższym formularzu wprowadź pesel ucznia, numer przedmiotu z listy poniżej formularza oraz wynik jaki uczeń otrzymał z egzaminu." +
+            "W poniższym formularzu wprowadź pesel ucznia, numer przedmiotu z listy poniżej<br/> formularza oraz wynik jaki uczeń otrzymał z egzaminu." +
             "<form id='form1' runat='server' action='prac.aspx' method='get'>" +
             "Pesel: <input type='text' name='pesel'/><br />" +
             " Nr przedmiotu: <input type='number' name='nr' /><br />" +
@@ -74,6 +74,7 @@ public partial class prac : System.Web.UI.Page
             "</div><br/>" +
             "<table id='list'><tr><th colspan='2'>Lista numerow ocen</th></tr>" +
             "");
+        Response.Write("<div class='fixed'><img src='logo.png' /></div>");
         string strcom = "SELECT idprzedmiot,nazwa FROM przedmiot";
         MySqlConnection connect = new MySqlConnection(str);
         connect.Open();

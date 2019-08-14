@@ -10,5 +10,6 @@
         <a href="praclog.aspx">Logowanie pracownika</a><br />
         <a href="studlog.aspx">Logowanie studenta</a>
     </div>
+    <div class="fixed"><img src="logo.png" /></div>
 </body>
 </html>

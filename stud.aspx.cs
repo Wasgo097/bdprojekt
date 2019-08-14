@@ -39,6 +39,7 @@ public partial class stud : System.Web.UI.Page
                         Response.Write("<tr><th> " + read["nazwa"] + " </th><th> " + read["wynik"] + "</th></tr>");
                     }
                     Response.Write("</table>");
+                    Response.Write("<div class='fixed'><img src='logo.png' /></div>");
                 }
             }
             else Response.Write("Nie udalo sie zalogowac");

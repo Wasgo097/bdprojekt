@@ -60,6 +60,15 @@ table, th, td {
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    color: gray;
     padding: 5px;
+}
+.logout:hover {
+    background-color: #f0d5b5;
+    color: #b27055;
+}
+div.fixed {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    padding:5px;
 }

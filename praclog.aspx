@@ -13,5 +13,6 @@
         <input type="submit" value="Loguj"/>
     </form>
     </div>
+    <div class="fixed"><img src="logo.png" /></div>
 </body>
 </html>
